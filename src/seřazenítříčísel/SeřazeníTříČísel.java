@@ -6,12 +6,21 @@
 
 package seřazenítříčísel;
 
+import java.util.Scanner;
+
 public class SeřazeníTříČísel {
 
     public static void main(String[] args) {
-        int a = 3;
-        int b = 2;
-        int c = 1;
+        Scanner vstup = new Scanner(System.in, "Windows-1250");
+        
+        System.out.println("Porovnání tří čísel vzestupně.");
+        System.out.print("Zadejte první číslo: ");
+        int a = vstup.nextInt();
+        System.out.print("Zadejte druhé číslo: ");
+        int b = vstup.nextInt();
+        System.out.print("Zadejte třetí číslo:");
+        int c = vstup.nextInt();
+                
 
         if (a > b) {
             //swap(a,b);
